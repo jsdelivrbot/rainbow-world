@@ -20,7 +20,7 @@ $.getJSON("https://rawgit.com/johan/world.geo.json/master/countries.geo.json", f
 //});
 function loadMap() {
     console.log(geojsonLayer);
-    var map = L.map('map').setView([0, 0], 3);
+    var map = L.map('map').setView([3, 10], 3);
     geojsonLayer.addTo(map);
     geojsonLayer.on('mouseover', mousedFeature);
 }
