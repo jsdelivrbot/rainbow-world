@@ -9,13 +9,13 @@ function style(feature) {
         color: 'white'
     };
 }
-$.getJSON("https://rawgit.com/johan/world.geo.json/master/countries.geo.json", function (data) {
+$.getJSON("https://cdn.jsdelivr.net/gh/johan/world.geo.json@master/countries.geo.json", function (data) {
     geojsonLayer = L.geoJson(data, {
         style: style
     });
     loadMap();
 });
-//var geojsonLayer = new L.GeoJSON.AJAX("https://rawgit.com/johan/world.geo.json/master/countries.geo.json", {
+//var geojsonLayer = new L.GeoJSON.AJAX("https://cdn.jsdelivr.net/gh/johan/world.geo.json@master/countries.geo.json", {
 //      style: style
 //});
 function loadMap() {
